@@ -1,0 +1,23 @@
+/*Code poour ChineseFarmer.html*/
+body {
+    background-color: antiquewhite;
+}
+h1 {
+    font-family: 'Anton', sans-serif;
+}
+h2{
+    font-family: 'Rubik', sans-serif;
+}
+nav {
+    font-family: 'Anton',sans-serif;
+}
+p {
+	font-size: 15px;
+	font-family: Arial, sans-serif;
+	color: darkslategrey;
+}
+a:hover{
+background-color: chartreuse;    
+}
+.good{color: green}
+.bad{color:red}
