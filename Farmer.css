@@ -1,106 +1,118 @@
 /*Code poour ChineseFarmer.html*/
-header{
-    background-color: yellow;
-    text-align: center;
+/* p & a */
+p {
+    color: #171717;
+    font-family: serif;
+    font-size: 100%;
+    word-spacing: 120%;
 }
-q{
-    color: #303030;
-    background-color: lightgray;
-    font-size: 160%;
-    border-left: 3px solid firebrick;
-    margin: 80px;
-    padding-left: 30px; 
+a {
+    color: #000;
     font-style: italic;
 }
-blockquote{
-    background: -webkit-linear-gradient(-34deg, rgb(194, 205, 215), rgb(126, 95, 174));
-    background: linear-gradient(-34deg, rgb(194, 205, 215), rgb(126, 95, 174));
-    font-size: 160%;
-    color: #303030;
+a:visited {
+    color: darkmagenta;
+}
+a:hover {
+    background-color: aqua;
+}
+/*  header & body */
+header > h1 {
+    background: -webkit-linear-gradient(-17deg, rgb(22, 135, 237), rgb(100, 8, 133));
+    background: linear-gradient(-17deg, rgb(22, 135, 237), rgb(100, 8, 133));
 }
 body {
-    background-color: transparent;
-   background-image: url('https://img.freepik.com/free-vector/white-abstract-background_23-2148806276.jpg?w=2000');
+    /*  background: -webkit-linear-gradient(-17deg, rgb(22, 135, 237), rgb(100, 8, 133));
+    background: linear-gradient(-17deg, rgb(22, 135, 237), rgb(100, 8, 133));  */
+    background-image: url('https://www.freevector.com/uploads/vector/preview/30949/Pastel_Fluid_Background.jpg');
     background-repeat: no-repeat;
-    background-position: bottom,right;
     background-size: cover;
-     width: 90%;
-    padding: 5px;
-    margin: auto;
+    background-position: bottom right;
+    margin: 0% 0.5%;
+    max-width: 90%;
 }
-h1 {
-    font-family: 'Anton', sans-serif;
+body p:first-of-type{
+    font-weight: bold;
 }
-h2{
-    font-family: 'Rubik', sans-serif;
-    padding-bottom: 80px;
-}
-nav {
-    font-family: 'Anton',sans-serif;
-}
-p {
-	font-size: 15px;
-	font-family: serif;
-	color: #171717;
-    word-spacing: 120%;
-    letter-spacing: normal;
-    font-size: large;
-}
-table,
-td {
-    border: 1px solid #333;
-    border-collapse: collapse;
-    text-align: center;
+/* quotes & blockquote */
+blockquote {
+    background-color: #ccc;    
+    border-left: 3px solid firebrick;
+    font-size: 160%;
+    font-weight: bold;
+    margin: 80px 25%;
+    padding-left: 30px;
+    width: 50%;
 }
 
-thead,
-tfoot {
-    background-color: #333;
-    color: #fff;
-    padding: :0;
+q {
+    display: inline-block;
+    width: 100%;
+    margin: 10px 5%;    
+    border-left: 3px solid;
+    padding-left: 30px;
 }
-footer{
-    padding: 1em;
+/*  classes  */
+
+/*  Vi & Fa quotes  */
+.ViTxt, .FaTxt, blockquote, q{
+    font-style: italic;
 }
-.preshow{
-    font-size: larger;
+.ViTxt{
+    border-left-color: crimson;
 }
-a:hover{
-background-color: goldenrod;    
+.FaTxt{
+    border-left-color: chartreuse;
 }
-a:visited{
-color: darkmagenta;    
+/* good or bad */
+.good, .bad{
+    text-transform: uppercase;
 }
 .good{
     color: green;
-    text-transform: capitalize;
 }
-.bad{
-    color:red;
-    text-transform: capitalize;
+.bad {
+    color: red;
 }
-.ppllist>li{
+/*  liste  */
+.typeofppl>li{
     padding-top: 15px;
     padding-bottom: 15px;
-}
-.ppllist li:first-child{
     background-repeat: no-repeat;
-    background-image: url('https://raw.githubusercontent.com/becodeorg/Swartz-6/main/1.The-Field/8.Html-CSS/progressive-enhancement/bien.png?token=GHSAT0AAAAAABT6XYMECY7K7A34FJX65Y3CYTSN5BA');
-    padding-right: 600px;
     background-position: center;
     background-origin: content-box;
 }
-.ppllist li:nth-child(2) {
-    background-image: url('https://raw.githubusercontent.com/becodeorg/Swartz-6/main/1.The-Field/8.Html-CSS/progressive-enhancement/mal.png?token=GHSAT0AAAAAABT6XYME73P44V54ALLEDZVUYTSOZEA');
-    background-repeat: no-repeat;
-     padding-right: 600px;
-    background-position: center;
-    background-origin: content-box;
+
+.typeofppl li:first-child{
+    background-image: url("images/bien.png");
+    padding-right: 50%;
 }
-.ppllist li:nth-child(3) {
-    background-image: url('https://raw.githubusercontent.com/becodeorg/Swartz-6/main/1.The-Field/8.Html-CSS/progressive-enhancement/chat.png?token=GHSAT0AAAAAABT6XYMFSZ246MUNYM5ND4W2YTSOIHQ');
-    background-repeat: no-repeat;
-     padding-right: 600px;
-    background-position: center;
-    background-origin: content-box;
+
+.typeofppl li:nth-child(2){
+    background-image: url("images/mal.png");
+    padding-right: 50%;
+}
+
+.typeofppl li:nth-child(3){
+    background-image: url("images/chat.png");
+    padding-right: 50%;
+}
+/*  table  */
+tr:nth-of-type(even){
+    background-color: grey;
+}
+
+tr:nth-of-type(odd){
+    background-color: lightgray;
+}
+
+.article>img{
+    max-width: 300px;
+}
+
+.article{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px; /*  ???  */
 }
